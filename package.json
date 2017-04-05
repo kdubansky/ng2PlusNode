@@ -6,7 +6,10 @@
     "express": "^4.15.2",
     "mysql": "^2.13.0"
   },
-  "scripts" : {
+  "scripts": {
     "start": "node server.js"
+  },
+  "dependencies": {
+    "simple-node-logger": "^0.93.17"
   }
 }
