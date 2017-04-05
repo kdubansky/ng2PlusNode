@@ -17,21 +17,12 @@ var connection = mysql.createConnection({
   database : 'hackathon'
 });
 
+var routes = require('./backend/routes.js');
 // connection.query('SELECT 1 + 1 AS solution', function (error, results, fields) {
 //   if (error) throw error;
 //   console.log('The solution is: ', results[0].solution);
 // });
 
-router.get('/', function(req, res) {
-    res.json({ message: 'hooray! welcome to our api!' });
-});
-
-router.get('/item', function(req, res) {
-    connection.query('select * from item', function (error, results, fields) {
-        if (error) throw error;
-        console.log(error, results, fields);
-        res.json(results);
-    });
-});
+routes.setRoutes(app, connection);
 
 app.listen(9090);
