@@ -14,9 +14,15 @@ FLUSH PRIVILEGES;
 
 
 CREATE TABLE item (
-	id BIGINT,
+	id BIGINT NOT NULL PRIMARY KEY AUTO_INCREMENT,
 	name VARCHAR(50),
 	value INT
 );
+
+CREATE UNIQUE INDEX
+	item_index_primary
+ON
+	item
+	(id);
 
 
