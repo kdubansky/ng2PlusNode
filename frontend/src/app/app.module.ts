@@ -13,6 +13,11 @@ import { HackHttpWrapper } from './common/http/hack.http.wrapper';
 
 import { HackNavbarComponent } from './navbar/hack.navbar.component';
 
+// Vender components -------------------------------------------------
+
+import 'hammerjs';
+import { MaterialModule } from '@angular/Material';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +26,8 @@ import { HackNavbarComponent } from './navbar/hack.navbar.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    MaterialModule
   ],
   providers: [
     HackHttpWrapper
