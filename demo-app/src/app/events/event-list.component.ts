@@ -6,10 +6,18 @@ import { Component } from '@angular/core';
     <div>
         <h1> ng 2 events</h1>
         <hr>
-        <h2>First Name: {{person.firstName}}</h2>
-        <h2>Last Name: {{person.lastName}}</h2>
-        <h2>Age: {{person.age}}</h2>
-        <h2>Job: {{person.job}}</h2>
+        <md-card>
+            <h2>First Name: {{person.firstName}}</h2>
+            <h2>Last Name: {{person.lastName}}</h2>
+            <h2>Age: {{person.age}}</h2>
+            <h2>Job: {{person.job}}</h2>
+        </md-card>
+        <md-card>
+            <h2>First Name: {{person.firstName}}</h2>
+            <h2>Last Name: {{person.lastName}}</h2>
+            <h2>Age: {{person.age}}</h2>
+            <h2>Job: {{person.job}}</h2>
+        </md-card>
     </div>
     `
 })
