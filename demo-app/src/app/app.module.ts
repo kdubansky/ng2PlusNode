@@ -1,4 +1,5 @@
-import { EventsListComponent} from './events/event-list.component'
+import { EventThumbnailComponent } from './events/event-thumbnail.component';
+import { EventsListComponent} from './events/events-list.component'
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -14,7 +15,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
-    EventsListComponent
+    EventsListComponent,
+    EventThumbnailComponent
   ],
   imports: [
     BrowserModule,
