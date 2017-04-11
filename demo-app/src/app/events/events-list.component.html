@@ -2,8 +2,10 @@
     <h1> ng 2 events</h1>
     <hr>
     
-    <event-thumbnail #thumbnail [person]="person" (eventClick)="handleEventClicked($event)"></event-thumbnail>
-    <button md-raised-button color="primary" (click)="thumbnail.logFoo()">Log Foo</button>
-    <h3>{{thumbnail.someProperty}}</h3>
+    <div *ngFor="let person of people">
+        <event-thumbnail #thumbnail [person]="person" (eventClick)="handleEventClicked($event)"></event-thumbnail>
+        <button md-raised-button color="primary" (click)="thumbnail.logFoo()">Log Foo</button>
+        <h3>{{thumbnail.someProperty}}</h3>
+    </div>
 
 </div>
