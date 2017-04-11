@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: `events-list`,
-    styleUrls: ['./events-list.component.css'],
+    styleUrls: ['events-list.component.css'],
     templateUrl: 'events-list.component.html'
 })
 
@@ -13,5 +13,9 @@ export class EventsListComponent{
         lastName: 'Dub',
         age: 33,
         job:'Web Developer'
+    }
+
+    handleEventClicked(data){
+        console.log('recieved: ' + data)
     }
 }

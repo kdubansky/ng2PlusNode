@@ -1,8 +1,17 @@
-<h1>
-  {{title}}
-</h1>
+<div>
 
-<events-list></events-list>
-<!-- Add Nav header here -->
+  <!-- Add Nav header here -->
+  <md-toolbar color="accent">
+    
+    <span>Angular 2 material toolbar + {{title}}</span>
+    
+    <!--&nbsp; in current row: fill the remaining space-->
+    <span class="fill-space"></span>
+    
+    <span>Right Aligned Text</span>
+  </md-toolbar>
 
-<!-- Add dynamic view here -->
+  <!-- Add dynamic view here -->
+  <events-list></events-list>
+
+</div>
