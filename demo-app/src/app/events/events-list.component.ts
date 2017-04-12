@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component } from '@angular/core'
+import { EventService } from './shared/events.service'
 
 @Component({
     selector: `events-list`,
@@ -7,38 +8,14 @@ import { Component } from '@angular/core';
 })
 
 export class EventsListComponent{
-    person = {
-        id: 1,
-        firstName: 'Kevin',
-        lastName: 'Dub',
-        age: 33,
-        job:'Web Developer'
+
+    people: any[]
+
+    constructor(private eventService: EventService){
+        this.people = this.eventService.getPeople()
     }
-
-    people = [
-        {
-        id: 1,
-        firstName: 'Kevin',
-        lastName: 'Dub',
-        age: 33,
-        job:'Web Developer'
-    },
-    {
-        id: 1,
-        firstName: 'Gus',
-        lastName: 'Hill',
-        age: 31,
-        job:'Web Developer'
-    },
-    {
-        id: 1,
-        firstName: 'Some',
-        lastName: 'Guy',
-        age: 54,
-        job:'Web Developer'
-        },
-    ]
-
+    
+    //---------------------------------
     handleEventClicked(data){
         console.log('recieved: ' + data)
     }

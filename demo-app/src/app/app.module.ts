@@ -1,3 +1,4 @@
+import { EventService } from './events/shared/events.service'
 import { EventThumbnailComponent } from './events/event-thumbnail.component';
 import { EventsListComponent} from './events/events-list.component'
 import { BrowserModule } from '@angular/platform-browser';
@@ -12,6 +13,7 @@ import 'hammerjs';
 import { MaterialModule } from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +27,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     MaterialModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [EventService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
