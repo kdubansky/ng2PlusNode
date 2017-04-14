@@ -44,46 +44,104 @@
 
         <mdl-layout-content class="demo-content">
           
-            <table class="mdl-data-table docu mdl-shadow--2dp" mdl-shadow="2" ng-reflect-mdl-shadow="2">
-                <thead style="background-color: rgb(83,109,254)">
+            <table class="mdl-data-table docu mdl-shadow--2dp" mdl-shadow="2" ng-reflect-mdl-shadow="2" style="width:100%">
+                <thead style="background-color: #1976D2">
                   <tr>
-                      <th>Attribute</th>
-                      <th>Description</th>
-                      <th>Action</th>
+                      <th>#</th>
+                      <th>Name</th>
+                      <th>Min DE</th>
+                      <th>Max DE</th>
+                      <th>DE per JVM</th>
+                      <th>JVM Memory</th>
+                      <th>Environment</th>
+                      <th>Configuration</th>
+                      <th>Start Graph</th>
+                      <th>Traces Enables</th>
+                      <th>Actions</th>
                   </tr>
                 </thead>
                 <tbody>
 
                   <tr>
-                      <td>table-model</td>
-                      <td>
-                        An Instance that impelments the <i>IMdlTableModel</i>
-                      </td>
+                      <td>#1</td>
+                      <td>DE #1</td>
+                      <td></td>
+                      <td></td>
+                      <td>1</td>
+                      <td>256</td>
+                      <td>test-env-1</td>
+                      <td>some-awesome-config</td>
+                      <td>starting-graph</td>
+                      <td>true</td>
                       <td>
                         <button mdl-button mdl-button-type="raised" mdl-colored="primary" mdl-ripple>
-                          Button
+                          Edit
+                        </button>
+                        <button mdl-button mdl-button-type="raised" mdl-colored="primary" mdl-ripple style="background-color:#EF3C79">
+                          Delete
                         </button>
                       </td>
                   </tr>
 
                   <tr>
-                      <td>table-model-selected</td>
-                      <td>
-                        An  Array of <i>ITableItem</i>s. Each item is marked as selected.
-                      </td>
+                      <td>#2</td>
+                      <td>DE #2</td>
+                      <td></td>
+                      <td></td>
+                      <td>1</td>
+                      <td>256</td>
+                      <td>test-env-1</td>
+                      <td>some-awesome-config</td>
+                      <td>starting-graph</td>
+                      <td>true</td>
                       <td>
                         <button mdl-button mdl-button-type="raised" mdl-colored="primary" mdl-ripple>
-                          Button
+                          Edit
+                        </button>
+                        <button mdl-button mdl-button-type="raised" mdl-colored="primary" mdl-ripple style="background-color:#EF3C79">
+                          Delete
                         </button>
                       </td>
                   </tr>
 
                   <tr>
-                      <td>table-model-selectionChanged</td>
-                      <td>Event that is triggered if the selection is changed. The value property of the event contains the array with the selected items.</td>
+                      <td>#3</td>
+                      <td>DE #3</td>
+                      <td></td>
+                      <td></td>
+                      <td>1</td>
+                      <td>256</td>
+                      <td>test-env-1</td>
+                      <td>some-awesome-config</td>
+                      <td>starting-graph</td>
+                      <td>true</td>
                       <td>
                         <button mdl-button mdl-button-type="raised" mdl-colored="primary" mdl-ripple>
-                          Button
+                          Edit
+                        </button>
+                        <button mdl-button mdl-button-type="raised" mdl-colored="primary" mdl-ripple style="background-color:#EF3C79">
+                          Delete
+                        </button>
+                      </td>
+                  </tr>
+
+                  <tr>
+                      <td>#4</td>
+                      <td>DE #4</td>
+                      <td></td>
+                      <td></td>
+                      <td>1</td>
+                      <td>256</td>
+                      <td>test-env-1</td>
+                      <td>some-awesome-config</td>
+                      <td>starting-graph</td>
+                      <td>true</td>
+                      <td>
+                        <button mdl-button mdl-button-type="raised" mdl-colored="primary" mdl-ripple>
+                          Edit
+                        </button>
+                        <button mdl-button mdl-button-type="raised" mdl-colored="primary" mdl-ripple style="background-color:#EF3C79">
+                          Delete
                         </button>
                       </td>
                   </tr>
@@ -93,7 +151,7 @@
             </table>
 
           <p></p>
-
+          <!--
           <p>
           <mdl-spinner single-color active></mdl-spinner>
           </p>
@@ -114,7 +172,11 @@
           <p>
             <mdl-switch [(ngModel)]="checkbox1" mdl-ripple>Option 1</mdl-switch>
           </p>
+          -->
+          
 
         </mdl-layout-content>
       </mdl-layout>
+
+      
 
